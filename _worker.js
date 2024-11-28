@@ -20,9 +20,9 @@ export default {
         // 按国家分组，随机取一半
         const selectedLinks = selectRandomHalfByCountry(validLinks);
 
-        // 替换第一行的 #国家代码 为 #Keaeye提供
+        // 替换第一行的 #国家代码 为 #极链提供
         if (selectedLinks.length > 0) {
-            selectedLinks[0] = selectedLinks[0].replace(/#\w+$/, "#Keaeye提供");
+            selectedLinks[0] = selectedLinks[0].replace(/#\w+$/, "#极链提供https://t.me/jiliankeji");
         }
 
         const plainTextContent = selectedLinks.join('\n');
